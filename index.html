@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday 🎉</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h1 id="title">🎂 Happy Birthday!</h1>
+    <p id="message">Click below to open your surprise 🎁</p>
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <button onclick="showSurprise()">Open</button>
+    
+    <div id="surprise" class="hidden">
+      <canvas id="confetti-canvas"></canvas>
+      <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Cake" />
+      <p id="wishText"></p>
+      <audio id="music" src="https://www.bensound.com/bensound-music/bensound-celebration.mp3"></audio>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
